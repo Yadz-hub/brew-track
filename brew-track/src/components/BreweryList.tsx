@@ -2,20 +2,21 @@ import { Box, Grid, Paper, Typography, Button } from '@mui/material';
 import React, { useState } from 'react';
 
 interface BreweryDetails {
-  id: number;
-  breweryName: string;
-  brewery_type: string;
-  street: string;
-  city: string;
-  state: string;
-  postal_code: string;
-  country: string;
-  longitude: string;
-  latitude: string;
-  phone: string;
-  website_url: string;
-  updated_at: string;
-  tag_list: [];
+  id: number,
+  breweryName: string,
+  brewery_type: string,
+  street: string,
+  city: string,
+  state: string,
+  postal_code: string,
+  country: string,
+  longitude: string,
+  latitude: string,
+  phone: string,
+  website_url: string,
+  updated_at: string,
+  tag_list: [],
+  degreesCelcius: string
 }
 
 interface Props {
@@ -52,6 +53,9 @@ const BreweryList: React.FC<Props> = ({ breweries }) => {
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
                   Phone: {brewery.phone}
+                </Typography>
+                <Typography variant="subtitle2" gutterBottom>
+                  {brewery.degreesCelcius} Degrees Celcius
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
                   Website:{" "}

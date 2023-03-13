@@ -1,0 +1,78 @@
+/* Base colors */
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+  }
+  
+  /* Main colors */
+  :root {
+    --color-primary: #ff6600; /* orange */
+    --color-secondary: #ffdd00; /* yellow */
+    --color-tertiary: #ff3300; /* red */
+  }
+  
+  /* Styles */
+  .App {
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+  
+  .App-header {
+    background-color: var(--color-primary);
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--color-white);
+  }
+  
+  .App-header p {
+    font-size: calc(10px + 1vmin);
+  }
+  
+  .App-main {
+    padding: 20px;
+  }
+  
+  .App-main h2 {
+    font-size: 24px;
+  }
+  
+  .App-main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-main li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+  }
+  
+  .App-main a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+  }
+  
+  .App-main a:hover {
+    text-decoration: underline;
+  }
+  
+  .App-main li div {
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--color-tertiary);
+  }
+  
+  .App-footer {
+    padding: 10px;
+    font-size: 14px;
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+  }
+  
